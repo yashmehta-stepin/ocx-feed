@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#RND-7172] Campaign Contact Pickup Count Lower Than Expected</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://ongage.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [RND-7172]&nbsp;<a href="https://ongage.atlassian.net/browse/RND-7172">Campaign Contact Pickup Count Lower Than Expected</a>
+            <span class="subText">
+               Created: 18/06/26                   &nbsp;Updated: 20/07/26
+
+                                    &nbsp;Due: 10/05/26
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://ongage.atlassian.net/secure/BrowseProject.jspa?id=10005">R&amp;D</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                                        <a title="ASAPI"
+                href="https://ongage.atlassian.net/issues/?jql=project%3D10005%20AND%20%22component%22%3D10005%20ORDER%20BY%20priority%20ASC"
+            >ASAPI</a>                        </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                                        <a title="ASAPI-v8.131.0"
+                href="https://ongage.atlassian.net/issues/?jql=project%3D10005%20AND%20%22fixVersion%22%3D15463%20ORDER%20BY%20priority%20ASC"
+            >ASAPI-v8.131.0</a>                        </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Support
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Highest
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="557058:a01b4872-0086-4bc3-903e-23f26637afa2"
+                id="word_reporter_557058:a01b4872-0086-4bc3-903e-23f26637afa2"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa01b4872-0086-4bc3-903e-23f26637afa2">
+                    Zendesk Support for Jira
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_assignee_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-66005-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            jira_escalated, jira_update                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260618-203258.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260618-203024.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260618-203222.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260618-203157.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260622-070205.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260622-070229.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260625-085724.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260625-085847.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260719-085353.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://ongage.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260719-084523.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Relates</b><br/>
+                            </td>
+                        </tr>
+                                    <tr>
+            <td>
+                relates to
+            </td>
+            <td>
+                <a href="https://ongage.atlassian.net/browse/RND-7183">
+                     RND-7183                 </a>
+            </td>
+            <td>
+                Gap between Targeted and Sent volumes
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                                                    </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-66005-value" class="value" bgcolor="#ffffff" width="80%">Vulcan Sprint 76</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Customer requested:</b></td>
+                <td id="customfield_10037-66005-value" class="value" bgcolor="#ffffff" width="80%">    Prime_choice_marketing_inc</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Start date:</b></td>
+                <td id="customfield_10015-66005-value" class="value" bgcolor="#ffffff" width="80%">          <span title="04/05/26"><time datetime="2026-05-04">04/05/26</time></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Tester:</b></td>
+                <td id="customfield_10035-66005-value" class="value" bgcolor="#ffffff" width="80%">        <span class="tinylink">        <span class="user-hover" rel="4aaefbae-d8d6-443d-adf1-56c96791258a" id="user_cf_4aaefbae-d8d6-443d-adf1-56c96791258a">Stepin\ Moti Bandhiya</span></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Developer Testing Note:</b></td>
+                <td id="customfield_10038-66005-value" class="value" bgcolor="#ffffff" width="80%">      <p>Need to test with campaigns which include specific domain and default domain. </p>
+
+<p>Need to test with both <tt>disable_domain_split</tt> turned on and turned off. This is done by mongo so please ask programmer to update for account.</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>QA Test Plan:</b></td>
+                <td id="customfield_10039-66005-value" class="value" bgcolor="#ffffff" width="80%">      <p><a href="https://ongage.atlassian.net/browse/RND-7172" title="smart-link" class="external-link" rel="nofollow noreferrer">https://ongage.atlassian.net/browse/RND-7172</a> </p>
+
+<p><b>QA Test Plan</b></p>
+
+<p><b>Scope</b><br/>
+Verify that the campaign picks the expected number of eligible contacts according to the configured quota for the configured Domain, with disable_domain_split set to ON/OFF both.</p>
+
+<p><b>Out of Scope</b><br/>
+There is no need to test other campaign functionalities unrelated to contact pickup count, quota behavior, and domain split configuration.</p>
+
+<p><b>Test Cases</b><br/>
+Case 1:<br/>
+Step 1: Ask the developer to enable the disable_domain_split flag ON.<br/>
+Step 2: Once the developer turn ON this flag, run a campaign using a segment containing 20 Gmail domain email IDs and 20 other domain email IDs. Use quota in it<br/>
+Step 3: Verify that eligible contacts are not unexpectedly excluded due to quota limitations.</p>
+
+<p>Once case 1 is verified then perform case 2</p>
+
+<p><b>Case 2:</b> <br/>
+Step 1: Ask the developer to enable the disable_domain_split flag OFF.<br/>
+Step 2: Once the developer turn OFF this flag, run a campaign using a segment containing 20 Gmail domain email IDs and 20 other domain email IDs. Use quota in it<br/>
+Step 3: Verify that eligible contacts are not unexpectedly excluded due to quota limitations.</p>
+
+<p><b>Expected Result</b><br/>
+The campaign should pick the expected number of eligible contacts according to the configured quota for the configured Domain, with disable_domain_split set to ON/OFF, without unexpected contact exclusions.</p>
+
+<p>Environment: <b>Lab / Production</b></p>
+
+<p><b>Exit Criteria:</b> Successfully verify that the campaign picks the expected eligible contacts according to the configured quota in all planned scenarios.</p>
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p><b>Account Details</b><br/>
+Account name: Prime Choice Marketing Inc.<br/>
+Package value: $1199<br/>
+Account ID: 1025168<br/>
+List ID: 1336263_<br/>
+Campaign ID : *3398528269 *<br/>
+Segment ID : 1203407385<br/>
+Connection: Private SMTP Connections</p>
+
+<p><b>Description</b><br/>
+Campaign is targeting significantly fewer contacts than expected due to quota limitations.<br/>
+For example, Campaign ID: 3398528269 (Campaign quota is set to ~80k contacts and the total segment count is 259,041 contacts), but the campaign sent to only 53k contacts.</p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/76832" alt="image-20260618-203157.png" width="1159" style="border: 0px solid black" /></span></p>
+
+
+
+<p><b>Product Area</b><br/>
+Campaigns</p>
+
+<p><b>Steps to Reproduce</b></p>
+
+<ol>
+	<li>Go To List-ID: 1336263_&gt;&gt;Campaigns&gt;&gt;Overview&gt;&gt;Campaign IDs: <b>3398528269</b></li>
+	<li>Check campaigns&gt;overview&gt;snapshot</li>
+	<li>Check Campaigns in the Slavik</li>
+</ol>
+
+
+<p><b>Result</b><br/>
+The campaign picked up significantly fewer contacts than anticipated, resulting in a lower targeted audience count.</p>
+
+<p><b>Expected</b><br/>
+The campaign should target and pick up all eligible contacts in accordance with the configured audience criteria and available quota allocation.</p>
+
+<p><b>Things we Tried</b><br/>
+Reviewed the campaign configuration and verified the quota settings.<br/>
+We reviewed the campaign configuration, verified the ESP and Global quota settings across the selected ESP connections, and compared the configured quotas with the actual contacts picked up by the campaign. We observed that the campaign picked up <b>53k contacts</b> instead of the expected <b>80k contacts.</b></p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/76830" alt="image-20260618-203024.png" width="1159" style="border: 0px solid black" /></span></p>
+
+
+<p>We have checked the quota distribution settings and verified that quotas are configured across multiple ESP connections.</p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/76831" alt="image-20260618-203222.png" width="1159" style="border: 0px solid black" /></span></p>
+
+<p>We have checked the campaign targeting summary and observed that a significant number of contacts were excluded due to quota limitations.</p>
+
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/76829" alt="image-20260618-203258.png" width="1159" style="border: 0px solid black" /></span></p>
+
+<p><a href="https://ongage.zendesk.com/attachments/token/1kMIUdiBHNG6977hxnHRqivEu/?name=image.png" class="external-link" rel="nofollow noreferrer">Attachment - image.png</a>[http://appweb-1.vpc.ongage.net/tools/web/index.php?path=campaign%2Fhistory&amp;cid=3398528269|http://appweb-1.vpc.ongage.net/tools/web/index.php?path=campaign%2Fhistory&amp;cid=3398528269]</p>
+
+<ul>
+	<li>Please see Zendesk Support tab for further comments and attachments.</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-90780"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">21/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-90780"><td bgcolor="#ffffff">
+            <p>&#8211; This notification was sent from JIRA 
+    <span class="jira-issue-macro" data-jira-key="RND-7172" >
+                <a href="https://ongage.atlassian.net/browse/RND-7172" class="jira-issue-macro-key issue-link"  title="Campaign Contact Pickup Count Lower Than Expected" >
+            <img class="icon" src="https://ongage.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10308?size=medium" />
+            RND-7172
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Done</span>
+            </span>
+ to all linked Zendesk Support tickets by Emil Mana. &#8211;</p>
+
+<p>Looks like most of the outgoing emails are from domain gmail.com. all connections had a limit of 3K for gmail so most of the emails exceeded limit. this is why only 53K were sent out. </p>
+        </td></tr>
+                <tr id="comment-header-90870"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:9a159f6c-671e-46b6-8988-7e91ac9da29c"
+                id="word_commented_712020:9a159f6c-671e-46b6-8988-7e91ac9da29c"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A9a159f6c-671e-46b6-8988-7e91ac9da29c">
+                    Stepin\ Kanaiya Datwani
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">22/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-90870"><td bgcolor="#ffffff">
+            <p>HI <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a> </p>
+
+<p>Client shared latest campaign ID 3399871552:</p>
+
+<ul>
+	<li>It had 10 connections used. It was sent to 55k contacts even though the quota was higher.</li>
+	<li>It was strange that the system found 5000 Gmail contacts for 9 connections, and it also found 10k non-gmail contacs for first connection. Then not a single contact of “rest of the domains“was picked from the 9 connections the client used.</li>
+	<li>Include Segment ID 1207993451, which still contains about 16,790 non-Gmail contacts that should have been targeted in the campaign.</li>
+</ul>
+
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/77213" alt="image-20260622-070205.png" width="695" style="border: 0px solid black" /></span></p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/77214" alt="image-20260622-070229.png" width="695" style="border: 0px solid black" /></span></p>
+        </td></tr>
+                <tr id="comment-header-90971"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">22/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-90971"><td bgcolor="#ffffff">
+            <p>This is the split from my end</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>┌─total─┬─gmail─┬─non_gmail─┬─connection_id─┐
+│  5000 │  2998 │      2002 │       1094951 │
+│  5001 │   562 │      4439 │       1094419 │
+│  5001 │  2999 │      2002 │       1094968 │
+│  5001 │     0 │      5001 │       1094969 │
+│  8002 │     0 │      8002 │       1094404 │
+│  5001 │  3000 │      2001 │       1094967 │
+│  5002 │  2998 │      2004 │       1094955 │
+│  4999 │  3000 │      1999 │       1094954 │
+│  5001 │     0 │      5001 │       1094966 │
+│  5002 │  3000 │      2002 │       1094880 │
+└───────┴───────┴───────────┴───────────────┘</pre>
+</div></div>
+
+<hr />
+
+<p>segment 1207913149 had 105438 in <a href="http://gmail.com" class="external-link" rel="nofollow noreferrer">gmail.com</a> and 42337 in all other domains</p>
+
+<p>segment 1207836312 had 76450 in <a href="http://gmail.com" class="external-link" rel="nofollow noreferrer">gmail.com</a> and 34816 in all other domains</p>
+
+<p>all 181888 emails were unique and there were no duplicates for <a href="http://gmail.com" class="external-link" rel="nofollow noreferrer">gmail.com</a></p>
+
+<p>all 77153 email were unique and there were no duplicates for other domains</p>
+
+<hr />
+
+<p>I think I understand the problem. it looks like the default quota takes into consideration the <a href="http://gmail.com" class="external-link" rel="nofollow noreferrer">gmail.com</a> quota.</p>
+
+<p>In the UI it suggests that the default quota should be added to the <a href="http://gmail.com" class="external-link" rel="nofollow noreferrer">gmail.com</a> quota</p>
+        </td></tr>
+                <tr id="comment-header-91004"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">22/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-91004"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3A178ab9eb-31e9-404b-b08c-7abb38554137" class="user-hover" rel="557058:178ab9eb-31e9-404b-b08c-7abb38554137" data-account-id="557058:178ab9eb-31e9-404b-b08c-7abb38554137" accountid="557058:178ab9eb-31e9-404b-b08c-7abb38554137" rel="noreferrer">Ofer Sapir</a> </p>
+
+<p>I asked claude to take a look and here is the answer:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>The actual conflict
+
+  The mailing was built with a domain-split distribution (explicit gmail.com per-connection quotas), but the account has domain splitting turned off. These two settings are mutually
+  incompatible — per-domain quotas only function when domain_group is allowed to reflect the real recipient domain.
+
+  Fix options:
+  1. Set disable_domain_split to 0/null on account 1025168 so domain_group reflects the real domain and the gmail bucket is honored separately (this is the direct fix for this account).
+  2. Or, at the point the distribution_config is generated, don't emit per-domain (gmail.com) quota entries when the account has disable_domain_split=1, since they can never be satisfied —
+  and surface a validation warning instead of silently mis-sending.
+
+  Option 1 is what restores the 5000+3000 behavior you expect.
+
+  Want me to look at where disable_domain_split is set / where the distribution_config is generated to scope a code-level fix for option </pre>
+</div></div>
+
+<hr />
+
+<p>looking for what claude fixing for option 2</p>
+        </td></tr>
+                <tr id="comment-header-91548"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">24/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-91548"><td bgcolor="#ffffff">
+            <p>There is a feedback without comment</p>
+        </td></tr>
+                <tr id="comment-header-91552"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">24/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-91552"><td bgcolor="#ffffff">
+            <p>I took a look using claude to see what type of segmentations there are. claude found the following:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>  ┌─────────────────┬───────────────────────────────────────────────────────────────────┬──────────────────────────┐
+  │ Count (entries) │                           Keys present                            │    Distribution mode     │
+  ├─────────────────┼───────────────────────────────────────────────────────────────────┼──────────────────────────┤
+  │ 255,690         │ esp_id, esp_connection_id, isp_id, domain, percent, connection_id │ Domain split by percent  │
+  ├─────────────────┼───────────────────────────────────────────────────────────────────┼──────────────────────────┤
+  │ 28,822          │ esp_id, esp_connection_id, segment_id, percent, connection_id     │ Segment split by percent │
+  ├─────────────────┼───────────────────────────────────────────────────────────────────┼──────────────────────────┤
+  │ 15,355          │ esp_id, esp_connection_id, isp_id, domain, quota                  │ Domain split by quota    │
+  ├─────────────────┼───────────────────────────────────────────────────────────────────┼──────────────────────────┤
+  │ 4,563           │ esp_id, esp_connection_id, segment_id, quota                      │ Segment split by quota   │
+  └─────────────────┴───────────────────────────────────────────────────────────────────┴──────────────────────────┘</pre>
+</div></div>
+        </td></tr>
+                <tr id="comment-header-91772"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb"
+                id="word_commented_712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ad8dbe4f9-16fc-4d57-92f8-3703920b99cb">
+                    Stepin\ Tejal Dagli
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">25/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-91772"><td bgcolor="#ffffff">
+            <div class="panel" style="background-color: #deebff;border-width: 1px;"><div class="panelContent" style="background-color: #deebff;">
+<p><b>QA Summary</b><br/>
+<b>Requested Feedback</b></p>
+</div></div>
+
+<p><b>Description:</b></p>
+
+<p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a> could you please check I am not receiving all emails - though it shows all sent</p>
+
+
+
+<p><b>Steps to reproduce:</b></p>
+
+<ol>
+	<li>Gmail domain - 15 email ids</li>
+	<li>Other domain - 15 email ids</li>
+	<li>Sent using 3 ESPs</li>
+	<li><b>CID sent twice - 22315076 , 22315088</b></li>
+	<li><b>But for gmail - I received only 6 emails</b></li>
+	<li><b>And other domain - I received only 11 emails</b></li>
+	<li><b>So total only received 17 emails - out of 30 Sent</b></li>
+	<li>Snapshot shows 30 Sent</li>
+</ol>
+
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/77769" alt="image-20260625-085724.png" width="527" style="border: 0px solid black" /></span></p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/77770" alt="image-20260625-085847.png" width="527" style="border: 0px solid black" /></span></p>
+
+
+
+<p> </p>
+
+<p><b>Test Results:</b><br/>
+Environment: <b>DEV</b> <br/>
+Account ID: 30416<br/>
+List ID: 84739</p>
+        </td></tr>
+                <tr id="comment-header-92175"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb"
+                id="word_commented_712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ad8dbe4f9-16fc-4d57-92f8-3703920b99cb">
+                    Stepin\ Tejal Dagli
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">29/06/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-92175"><td bgcolor="#ffffff">
+            <div class="panel" style="background-color: #e3fcef;border-width: 1px;"><div class="panelContent" style="background-color: #e3fcef;">
+<p><b>QA Summary</b></p>
+
+<p><b>Verified</b></p>
+</div></div>
+
+<p>As per talk with <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a> on slack - the important thing was division of chunks which was done correctly. And so it can be verified.</p>
+
+<p>Thanks! <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a> for the investigation.</p>
+        </td></tr>
+                <tr id="comment-header-94701"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:4bebd63c-1596-473f-9e9c-be337544bfff"
+                id="word_commented_712020:4bebd63c-1596-473f-9e9c-be337544bfff"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4bebd63c-1596-473f-9e9c-be337544bfff">
+                    Noam Rotem
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">13/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-94701"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a>   I see this is ready to be deployed.<br/>
+Do you think it an be deployed tomorrow?<br/>
+Kindly sync with <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3A178ab9eb-31e9-404b-b08c-7abb38554137" class="user-hover" rel="557058:178ab9eb-31e9-404b-b08c-7abb38554137" data-account-id="557058:178ab9eb-31e9-404b-b08c-7abb38554137" accountid="557058:178ab9eb-31e9-404b-b08c-7abb38554137" rel="noreferrer">Ofer Sapir</a>  on this and keep me posted.<br/>
+Thanks!</p>
+        </td></tr>
+                <tr id="comment-header-94770"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">14/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-94770"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4bebd63c-1596-473f-9e9c-be337544bfff" class="user-hover" rel="712020:4bebd63c-1596-473f-9e9c-be337544bfff" data-account-id="712020:4bebd63c-1596-473f-9e9c-be337544bfff" accountid="712020:4bebd63c-1596-473f-9e9c-be337544bfff" rel="noreferrer">Noam Rotem</a> </p>
+
+<p>Informed <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3A178ab9eb-31e9-404b-b08c-7abb38554137" class="user-hover" rel="557058:178ab9eb-31e9-404b-b08c-7abb38554137" data-account-id="557058:178ab9eb-31e9-404b-b08c-7abb38554137" accountid="557058:178ab9eb-31e9-404b-b08c-7abb38554137" rel="noreferrer">Ofer Sapir</a> VIA slack (should be sent at 9AM) on this</p>
+        </td></tr>
+                <tr id="comment-header-95326"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">16/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95326"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A4bebd63c-1596-473f-9e9c-be337544bfff" class="user-hover" rel="712020:4bebd63c-1596-473f-9e9c-be337544bfff" data-account-id="712020:4bebd63c-1596-473f-9e9c-be337544bfff" accountid="712020:4bebd63c-1596-473f-9e9c-be337544bfff" rel="noreferrer">Noam Rotem</a> <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ad8dbe4f9-16fc-4d57-92f8-3703920b99cb" class="user-hover" rel="712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb" data-account-id="712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb" accountid="712020:d8dbe4f9-16fc-4d57-92f8-3703920b99cb" rel="noreferrer">Stepin\ Tejal Dagli</a> </p>
+
+<p>I took campaign 3430032089 from complaining customer and checked it.</p>
+
+<p>Looks like the fix is working as expected.</p>
+        </td></tr>
+                <tr id="comment-header-95328"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                id="word_commented_712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46">
+                    Stepin\ Niyanta Vyas
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">16/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95328"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a> so do we need to test or we can verify the ticket?</p>
+        </td></tr>
+                <tr id="comment-header-95432"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95432"><td bgcolor="#ffffff">
+            <p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46" class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46" data-account-id="712020:23238aaf-4d5d-4044-8508-c25b58759f46" accountid="712020:23238aaf-4d5d-4044-8508-c25b58759f46" rel="noreferrer">Stepin\ Niyanta Vyas</a> </p>
+
+<p>Please do run a quick regression test. </p>
+        </td></tr>
+                <tr id="comment-header-95478"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                id="word_commented_712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46">
+                    Stepin\ Niyanta Vyas
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95478"><td bgcolor="#ffffff">
+            <p><b>QA Summary</b></p>
+
+<div class="panel" style="background-color: #deebff;border-width: 1px;"><div class="panelContent" style="background-color: #deebff;">
+<p><b>Requested Feedback</b></p>
+</div></div>
+
+<p><a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88" class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88" data-account-id="557058:eab77149-8147-4063-8343-0349dd4c4e88" accountid="557058:eab77149-8147-4063-8343-0349dd4c4e88" rel="noreferrer">Emil Mana</a>  could you please check below test. I have received all emails.</p>
+
+<p><b>Steps to reproduce:</b></p>
+
+<p><b>Gmail domain</b> - 30 email ids</p>
+
+<p><b>Other domain</b> - 30 email ids</p>
+
+<p><b>Sent using 3 ESPs - ECID:</b> 1095369 (Mailgun), 1094780 (<a href="http://smtp.com" class="external-link" rel="nofollow noreferrer">smtp.com</a> ), 75779 (sparkpost)</p>
+
+<p><b>CID:</b> 3436531927</p>
+
+<p>Received all 60 emails.</p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/80690" alt="image-20260719-084523.png" width="608" style="border: 0px solid black" /></span></p>
+
+<p><span class="image-wrap" style=""><img src="https://ongage.atlassian.net/rest/api/3/attachment/content/80689" alt="image-20260719-085353.png" width="608" style="border: 0px solid black" /></span></p>
+
+<p><b>Test Results</b><br/>
+<b>Environment Production</b><br/>
+<b>Account ID:</b> 9357<br/>
+<b>List ID:</b> 1341933</p>
+        </td></tr>
+                <tr id="comment-header-95481"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                id="word_commented_712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46">
+                    Stepin\ Niyanta Vyas
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95481"><td bgcolor="#ffffff">
+            <p><b>QA Summary</b></p>
+
+<div class="panel" style="background-color: #deebff;border-width: 1px;"><div class="panelContent" style="background-color: #deebff;">
+<p><b>Passed</b></p>
+</div></div>
+
+<p>As per talk with Emil on slack passing the ticket.</p>
+
+<p><b>Test Results</b><br/>
+<b>Environment Production</b></p>
+        </td></tr>
+                <tr id="comment-header-95482"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                id="word_commented_712020:23238aaf-4d5d-4044-8508-c25b58759f46"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46">
+                    Stepin\ Niyanta Vyas
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95482"><td bgcolor="#ffffff">
+            <p>&#8211; This notification was sent from JIRA 
+    <span class="jira-issue-macro" data-jira-key="RND-7172" >
+                <a href="https://ongage.atlassian.net/browse/RND-7172" class="jira-issue-macro-key issue-link"  title="Campaign Contact Pickup Count Lower Than Expected" >
+            <img class="icon" src="https://ongage.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10308?size=medium" />
+            RND-7172
+        </a>
+                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success jira-macro-single-issue-export-pdf">Done</span>
+            </span>
+ to all linked Zendesk Support tickets by Stepin\ Niyanta Vyas. &#8211;</p>
+
+<p>We have verified the fix in the production environment. Please review the client’s account and let us know if you encounter any issues. If everything is okay, please proceed with notifying the client and update us on Jira here. Thanks!</p>
+        </td></tr>
+                <tr id="comment-header-95484"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:81a13aa5-48af-4628-bdbf-dba6aee65ecc"
+                id="word_commented_712020:81a13aa5-48af-4628-bdbf-dba6aee65ecc"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A81a13aa5-48af-4628-bdbf-dba6aee65ecc">
+                    Stepin\ Rakshit Solanki
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95484"><td bgcolor="#ffffff">
+            <p>Hi <a href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A23238aaf-4d5d-4044-8508-c25b58759f46" class="user-hover" rel="712020:23238aaf-4d5d-4044-8508-c25b58759f46" data-account-id="712020:23238aaf-4d5d-4044-8508-c25b58759f46" accountid="712020:23238aaf-4d5d-4044-8508-c25b58759f46" rel="noreferrer">Stepin\ Niyanta Vyas</a>, We have updated the client. If the client continues to experience the issue, we will let you know.</p>
+        </td></tr>
+                <tr id="comment-header-95520"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                id="word_commented_557058:eab77149-8147-4063-8343-0349dd4c4e88"
+                href="https://ongage.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aeab77149-8147-4063-8343-0349dd4c4e88">
+                    Emil Mana
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">20/07/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-95520"><td bgcolor="#ffffff">
+            <p>Closed the issue. please set feedback on me if needed</p>
+        </td></tr>
+            </table>
+Generated at Tue Jul 28 08:02:39 UTC 2026 by Stepin\ Yash Mehta using Jira 1001.0.0-SNAPSHOT#100293-rev:997e18f88042fe883e92e5e8bd1152a5564b7efe.
+
+</body>
+</html>
