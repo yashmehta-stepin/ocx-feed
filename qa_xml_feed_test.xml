@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed>
     <mailing>
+
         <subject>Dynamic From Name Test-{{email}}-{{ocx_mailing_id}}</subject>
+
         <from_name>ABC Dynamic Name</from_name>
 
         <blocks>
-            <block>
-                <type>html</type>
-                <content>
-                    <![CDATA[
-                        <html>
-                            <body>
-                                <h2>XML Feed Test</h2>
-                                <p>Hello, this is a test email.</p>
-                            </body>
-                        </html>
-                    ]]>
-                </content>
+            <block name="block1">
+                <items>
+                    <item>
+                        <variables>
+                            <variable>
+                                <key>content</key>
+                                <value><![CDATA[
+                                    <h2>XML Feed Test</h2>
+                                    <p>Hello, this is a test email.</p>
+                                    <p>This email is testing dynamic From Name.</p>
+                                ]]></value>
+                            </variable>
+                        </variables>
+                    </item>
+                </items>
             </block>
         </blocks>
+
     </mailing>
 </feed>
