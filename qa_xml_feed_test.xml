@@ -1,0 +1,30 @@
+<feed>
+	<mailing>
+    <subject>Dynamic XML From Name Test-{{email}}-{{ocx_mailing_id}}</subject>
+    <from_name>ABC Company QA Test</from_name>
+		<variables>
+			<variable>
+				<key>news_letter_header</key>
+				<value>Best Travel Deals </value>
+			</variable>
+		</variables>
+		<blocks>
+			<block name="block1">
+				<items>
+					<item>
+						<variables>
+							<variable>
+								<key>offer_title</key>
+								<value>Delightful Bread and Breakfast on the Coast</value>
+							</variable>
+							<variable>
+								<key>offer_url</key>
+								<value>http://yourwebsite.com/delightful_BB_on_coast/</value>
+							</variable>
+						</variables>
+					</item>
+				</items>
+			</block>
+		</blocks>
+	</mailing>
+</feed>
