@@ -5,7 +5,7 @@
         <from_name>QA Dynamic Name</from_name>
 
         <blocks>
-            <block>
+            <block name="block1">
                 <items>
                     <item>
                         <variables>
