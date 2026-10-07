@@ -1,0 +1,6 @@
+<feed>
+  <mailing>
+    <subject>Dynamic xlm feed From Name Test-{{email}}-{{ocx_mailing_id}}</subject>
+    <from_name>ABC Company</from_name>
+  </mailing>
+</feed>
